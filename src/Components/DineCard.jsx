@@ -25,9 +25,22 @@ export default function DineCard({restData}){
                     <p className="text-gray-500 text-[13px] font-bold">{restData?.info?.locationInfo?.distanceString}</p>
                 </div>
 
-                <div className=" w-30 flex items-center gap-1 text-gray-500 text-[13px] bg-[#f0f0f5] rounded-2xl ml-2 mr-2 mt-1 text-center">
+                <div className=" w-30 flex items-center gap-1 text-gray-500 text-[13px] bg-[#f0f0f5] rounded-2xl ml-5 mr-2 mt-3 text-center">
                     <img className="w-3 h-3 ml-2" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/dineout/rx-card/highlights/book.png"></img>
                     <p className="text-[rgba(2, 6, 12, 0.6)] text-[13px]">Table booking</p>
+                </div>
+
+
+                <div className="max-w-[95%] container mx-auto mt-3 no-scrollbar bg-[#1ba672] flex justify-around text-white py-3 px-3 rounded-2xl text-[14px] font-bold">
+                    <div className="flex items-center gap-1">
+                        <img className="w-5 h-5 object-cover" src={ImageURL?.imageBaseURL+restData?.info?.offerInfoV3?.offerLogo?.logo}></img>
+                        <div>{restData?.info?.offerInfoV3?.vendorOffer?.title + " "+ restData?.info?.offerInfoV3?.vendorOffer?.subtitle}</div>
+                    </div>
+                    <div>{restData?.info?.offerInfoV3?.vendorOffer?.subtext}</div>
+                </div>
+                <div className="max-w-[95%] container mx-auto mt-3 mb-3 no-scrollbar bg-[#c8f9e5]  py-3 px-3 rounded-2xl  ">
+                 
+                    <div className="text-[#1ba672] text-[14px] font-bold">{restData?.info?.customerOffer?.info?.description}</div>
                 </div>
                 </a>
         </div>
