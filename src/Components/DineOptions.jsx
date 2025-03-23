@@ -1,5 +1,6 @@
 // import { dineoutRestaurants } from "../Utils/DineoutData";
 import { dineoutRestaurants } from "../Utils/DineoutData";
+import { ImageURL } from "../Utils/Images";
 import DineCard from "./DineCard";
 
 
@@ -8,7 +9,7 @@ export default function DineOptions(){
 
     return(<>
 
-        <div className="w-[80%] container mx-auto mt-20 mb-40">
+        <div className="w-[80%] container mx-auto mt-20">
 
         <div className="flex justify-between items-center">
         <h1 className="font-bold text-2xl">Discover best restaurants for Dineout</h1>
@@ -25,6 +26,13 @@ export default function DineOptions(){
 
         </div>
 
+
+
         </div>
+
+        <div className="">
+
+    <img className="mt-30 w-[100%] mb-40" src={ImageURL.imageBaseURL+"fl_lossy,f_auto,q_auto/portal/m/seo/App_download_banner.png"}></img>
+</div>
     </>)
 }

@@ -3,9 +3,10 @@ import { ImageURL } from "../Utils/Images";
 
 export default function DineCard({restData}){
 
+   
     return(<>
 
-        <div className="max-w-sm flex-none border rounded-2xl border-gray-200">
+        <div className="max-w-sm flex-none border rounded-2xl border-gray-200 py-1 px-1">
             <a href={restData?.cta?.link}>
             <div target="_blank" className="relative">
                 <img className="w-80 h-50 object-cover rounded-2xl " src={ImageURL?.imageBaseURL+restData?.info?.mediaFiles[0]?.url}></img>
@@ -31,18 +32,20 @@ export default function DineCard({restData}){
                 </div>
 
 
-                <div className="max-w-[95%] container mx-auto mt-3 no-scrollbar bg-[#1ba672] flex justify-around text-white py-3 px-3 rounded-2xl text-[14px] font-bold">
+                <div className="max-w-[95%] container mx-auto mt-3 no-scrollbar bg-[#1ba672] flex justify-around text-white py-2 px-2 rounded-lg  text-[14px] font-bold">
                     <div className="flex items-center gap-1">
                         <img className="w-5 h-5 object-cover" src={ImageURL?.imageBaseURL+restData?.info?.offerInfoV3?.offerLogo?.logo}></img>
                         <div>{restData?.info?.offerInfoV3?.vendorOffer?.title + " "+ restData?.info?.offerInfoV3?.vendorOffer?.subtitle}</div>
                     </div>
                     <div>{restData?.info?.offerInfoV3?.vendorOffer?.subtext}</div>
                 </div>
-                <div className="max-w-[95%] container mx-auto mt-3 mb-3 no-scrollbar bg-[#c8f9e5]  py-3 px-3 rounded-2xl  ">
+                <div className="max-w-[95%] container mx-auto mt-3 mb-3 no-scrollbar bg-[#c8f9e5]  py-2 px-2 rounded-lg  ">
                  
-                    <div className="text-[#1ba672] text-[14px] font-bold">{restData?.info?.customerOffer?.info?.description}</div>
+                    <div className="text-[#1ba672] text-[14px] font-bold">{restData?.info?.customerOffer.infos[0].description}</div>
                 </div>
                 </a>
+
+
         </div>
     </>)
 }
