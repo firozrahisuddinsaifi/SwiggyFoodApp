@@ -58,7 +58,7 @@ export default function Footer(){
     </div>
 
     {/* Fifth Column (Social Media Links) */}
-    <div className="text-[16px] w-60 h-auto flex-shrink-0">
+    {/* <div className="text-[16px] w-40 h-auto flex-shrink-0">
       <div className="font-bold text-xl text-black">Social Links</div>
       <div className="flex justify-start items-center mt-4">
         <a href="https://www.linkedin.com/company/swiggy-in/" target="_blank">
@@ -91,7 +91,7 @@ export default function Footer(){
           </div>
         </a>
       </div>
-    </div>
+    </div> */}
   </div>
  
 
