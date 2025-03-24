@@ -58,40 +58,7 @@ export default function Footer(){
     </div>
 
     {/* Fifth Column (Social Media Links) */}
-    {/* <div className="text-[16px] w-40 h-auto flex-shrink-0">
-      <div className="font-bold text-xl text-black">Social Links</div>
-      <div className="flex justify-start items-center mt-4">
-        <a href="https://www.linkedin.com/company/swiggy-in/" target="_blank">
-          <div className="w-5 h-5 flex-shrink-0">
-            <img alt="Linkedin" src="https://media-assets.swiggy.com/portal/testing/seo-home/Linkedin.svg" />
-          </div>
-        </a>
-
-        <a href="https://www.instagram.com/swiggyindia/?hl=en" target="_blank">
-          <div className="w-5 h-5 flex-shrink-0">
-            <img alt="Instagram" src="https://media-assets.swiggy.com/portal/testing/seo-home/icon-instagram.svg" />
-          </div>
-        </a>
-        
-        <a href="https://www.facebook.com/swiggy.in/" target="_blank">
-          <div className="w-5 h-5 flex-shrink-0">
-            <img alt="Facebook" src="https://media-assets.swiggy.com/portal/testing/seo-home/icon-facebook.svg" />
-          </div>
-        </a>
-        
-        <a href="https://in.pinterest.com/swiggyindia/" target="_blank">
-          <div className="w-5 h-5 flex-shrink-0">
-            <img alt="Pinterest" src="https://media-assets.swiggy.com/portal/testing/seo-home/icon-pinterest.svg" />
-          </div>
-        </a>
-        
-        <a href="https://twitter.com/Swiggy?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
-          <div className="w-5 h-5 flex-shrink-0">
-            <img alt="Twitter" src="https://media-assets.swiggy.com/portal/testing/seo-home/Twitter.svg" />
-          </div>
-        </a>
-      </div>
-    </div> */}
+  
   </div>
  
 
