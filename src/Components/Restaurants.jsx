@@ -7,6 +7,7 @@ export default function Restaurants(){
 
 const [restData,setRestData]=useState([]);
 
+/** API call of restaurants  proxyserver to get access of data for testing purpose*/
     useEffect(()=>{
 
         async function fetchData(){
@@ -14,13 +15,14 @@ const [restData,setRestData]=useState([]);
             const swiggyAPI= "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true";
             const response = await fetch(proxyServer+swiggyAPI)
             const data = await response.json();
-             
-            setRestData(data?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-          
+
+/**Desired data is present at restaurant which is an array  */
+            setRestData(data?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants); 
         }
         fetchData();
     },[]);
 
+/** if data not fetched from API then this must be visible for better user experience */
     if(restData.length==0){
         return <Shimmer/>
     }

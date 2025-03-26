@@ -34,3 +34,8 @@ https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&la
 https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.63270&lng=77.21980&restaurantId=26719&catalog_qa=undefined&submitAction=ENTER
 
 ## data drilling so complecated it is time taking 
+
+## Chanllenges 
+data filtering is tough task to handle it blow my mind
+while fetching the price it took me way far to understand the issue
+<!-- <p >{"₹"+ ("defaultPrice" in restData?restData.defaultPrice/100:restData.price/100)}</p> -->

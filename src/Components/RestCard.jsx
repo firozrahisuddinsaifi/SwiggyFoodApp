@@ -7,10 +7,13 @@ export default function RestCard({restInfo}){
  
     return(<>
 
+{/**Routing is used to navigate to another screen and dynamic id is passed to get details of particular restraunt */}
+
 <Link to={"/city/delhi/"+restInfo?.info?.id}>
 <div className="max-w-[280px] transform transition hover:scale-95 duration-200">
         <img className="w-70 h-45 object-cover rounded-xl" src={ImageURL?.imageBaseURL+restInfo?.info?.cloudinaryImageId} ></img>
       
+      {/**Restaurants details images rating and cuisines  */}
         <div className="w-[95%] mx-auto mt-2">
             <div className="font-bold">{restInfo?.info?.name}</div>
             <div className="flex gap-2 items-center">
@@ -22,6 +25,7 @@ export default function RestCard({restInfo}){
             <span className=" font-semibold"> {restInfo?.info?.sla?.slaString}</span>
         </div>
 
+{/** join() is used to provide gap between items */}
         <div className="text-gray-600 h-6 text-sm overflow-hidden">{restInfo?.info?.cuisines?.join(" ")}</div>
         </div>
 </div>
