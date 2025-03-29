@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import RestCard from "./RestCard";
 import Shimmer from "./Shimmer";
+import Footer from "./Footer";
 
 
 export default function Restaurants(){
@@ -28,7 +29,7 @@ const [restData,setRestData]=useState([]);
     }
   
     return(<>
-<div className="flex flex-wrap w-[70%] mx-auto mt-20 gap-5">
+<div className="flex flex-wrap w-[70%] mx-auto mt-20 gap-5 mb-20">
                 {
                     restData?.map((restInfo)=>{
                         return <RestCard key={restInfo?.info?.id} restInfo={restInfo}></RestCard>
@@ -36,6 +37,6 @@ const [restData,setRestData]=useState([]);
                 }
             </div>
 
-
+            <Footer/>
     </>)
 }

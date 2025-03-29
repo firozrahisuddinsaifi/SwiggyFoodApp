@@ -39,3 +39,10 @@ https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&la
 data filtering is tough task to handle it blow my mind
 while fetching the price it took me way far to understand the issue
 <!-- <p >{"₹"+ ("defaultPrice" in restData?restData.defaultPrice/100:restData.price/100)}</p> -->
+
+
+
+## search API
+
+
+https://www.swiggy.com/dapi/menu/pl/search?lat=28.63270&lng=77.21980&restaurantId=8614&isMenuUx4=true&query=ta&submitAction=ENTER
