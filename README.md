@@ -40,7 +40,10 @@ data filtering is tough task to handle it blow my mind
 while fetching the price it took me way far to understand the issue
 <!-- <p >{"₹"+ ("defaultPrice" in restData?restData.defaultPrice/100:restData.price/100)}</p> -->
 
+1. when i route to another screen previous looses all the values to resolve this 
+i used the centeralised data from the store i have a key naming quantity which helps to get the exact number of orders of a particular dish which helps me to not undo the state after or before routing from one to another components 
 
+2.this resolve the issue of recommendation count and individual count problem too.
 
 ## search API
 

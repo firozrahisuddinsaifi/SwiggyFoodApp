@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router"
 import MenuCard from "./MenuCard";
 import Footer from "./Footer";
+import RestMenuShimmer from "./RestMenuShimmer";
 
 export default function RestaurantMenu(){
 
@@ -30,11 +31,12 @@ export default function RestaurantMenu(){
         fetchData();
     },[id]);
 
-
+if(restData.length===0)
+    return <RestMenuShimmer/>
     return(<>
     <div >
 
-    <div className="w-[80%] mx-auto mt-20 mb-20">
+    <div className="w-[80%] mx-auto mt-30 mb-20">
     <Link to={`/city/delhi/${id}/search`}>
             <p className="w-full text-center text-2xl py-4 bg-gray-200 rounded-2xl">Search For Dishes</p>
 </Link>

@@ -3,6 +3,7 @@ import RestInfo from "./RestInfo";
 
 
 
+
 export default function MenuCard({menuItems,selected}){
 
 const [isOpen,setIsOpen]=useState(true);
@@ -94,6 +95,7 @@ const [isOpen,setIsOpen]=useState(true);
         </>)
         
     }
+
     return(<>
     
 {/** Initial state all options must be visible*/}

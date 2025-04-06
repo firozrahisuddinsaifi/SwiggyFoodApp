@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import RestCard from "./RestCard";
 import Shimmer from "./Shimmer";
 import Footer from "./Footer";
+import WhatsOnMind from "./WhatsOnMind";
 
 
 export default function Restaurants(){
@@ -24,12 +25,16 @@ const [restData,setRestData]=useState([]);
     },[]);
 
 /** if data not fetched from API then this must be visible for better user experience */
-    if(restData.length==0){
-        return <Shimmer/>
-    }
+  if(restData.length==0)
+      return(<Shimmer/>)
   
     return(<>
-<div className="flex flex-wrap w-[70%] mx-auto mt-20 gap-5 mb-20">
+
+            <div className="mt-30">
+            <WhatsOnMind/>
+            </div>
+  
+            <div className="flex flex-wrap w-[70%] mx-auto mt-20 gap-5 mb-20">
                 {
                     restData?.map((restInfo)=>{
                         return <RestCard key={restInfo?.info?.id} restInfo={restInfo}></RestCard>
