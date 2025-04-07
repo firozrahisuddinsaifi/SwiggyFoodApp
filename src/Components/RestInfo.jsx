@@ -54,20 +54,24 @@ return(<>
           <button onClick={toggleVisibility} className="mt-2 text-gray-500 font-bold">{isExpanded ? "Show Less" : "Show More"}</button>
   </div>
 
+ 
     {/*** food items image and add button*/}
-    <div className="w-[20%] relative rounded-2xl h-45 ">
-        <img className="w-full h-36 object-cover rounded-3xl" src={ImageURL.imageBaseURL+restData.imageId}></img>
-       
-       {
-        count===0?(<button className="absolute bottom-4 left-18 border-white shadow-md px-6 py-2 bg-white text-green-700 rounded-xl hover:cursor-pointer" onClick={()=>handleAddItems()}>ADD </button>
-        ):(<div className="flex absolute bottom-4 left-18 gap-2  px-6 py-2 bg-white text-green-700 rounded-xl border-white shadow-md ">
-            <button className="hover:cursor-pointer" onClick={()=>handleDecrementItems()}>-</button>
-            <span>{count}</span>
-            <button className="hover:cursor-pointer" onClick={()=>handleIncrementItems()}>+</button>
-        </div>)
-       }
+    <div className="w-[20%] relative rounded-2xl h-45">
+  <img
+    className="w-full h-36 object-cover rounded-3xl"
+    src={ImageURL.imageBaseURL + restData.imageId}
+    alt="Food item"
+  />
 
+  {count === 0 ? (
+    <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 border-white shadow-md px-6 py-2 bg-white text-green-700 rounded-xl hover:cursor-pointer" onClick={() => handleAddItems()}>ADD</button>) : (
+    <div className="flex absolute bottom-4 left-1/2 transform -translate-x-1/2 gap-2 px-6 py-2 bg-white text-green-700 rounded-xl border-white shadow-md">
+      <button className="hover:cursor-pointer" onClick={() => handleDecrementItems()}> - </button><span>{count}</span>
+        <button className="hover:cursor-pointer" onClick={() => handleIncrementItems()}> + </button>
     </div>
+  )}
+</div>
+
 </div>
 
 
