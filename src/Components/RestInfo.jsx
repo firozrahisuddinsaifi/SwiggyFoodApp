@@ -68,17 +68,7 @@ return(<>
        }
 
     </div>
-  {/*** food items image and add button */}
-  <div className=" md:w-[20%] relative rounded-2xl h-45">
-    <img
-      className="w-full h-36 object-cover rounded-3xl"
-      src={ImageURL.imageBaseURL + restData.imageId}
-      alt={restData?.name || "Food item"}
-    />
-    <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 border-white shadow-md px-6 py-2 bg-white text-green-700 rounded-xl">
-      ADD
-    </button>
-  </div>
+
 </div>
 
 
