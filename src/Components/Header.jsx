@@ -10,8 +10,8 @@ export default function Header(){
     <img className="w-40 h-12 text-lg md:text-2xl" src="https://res.cloudinary.com/dutdah0l9/image/upload/v1720058694/Swiggy_logo_bml6he.png" alt="Swiggy Logo" />
     
     <div className="text-white text-base font-bold gap-5 items-center flex flex-wrap">
-      <a target="_blank" href="https://www.swiggy.com/corporate/" className="mr-4 hidden  md:block">Swiggy Corporate</a>
-      <a href="https://partner.swiggy.com/login#/swiggy" className="mr-4 hidden md:block">Partner with us</a>
+      <a target="_blank" href="https://www.swiggy.com/corporate/" className="mr-4">Swiggy Corporate</a>
+      <a href="https://partner.swiggy.com/login#/swiggy" className="mr-4 ">Partner with us</a>
       <a className="border rounded-3xl border-white py-3 px-4 mr-4" href="#">Get the App</a>
       <a className="border rounded-3xl border-black bg-black py-3 px-6 mr-4" href="#">Sign in</a>
     </div>
