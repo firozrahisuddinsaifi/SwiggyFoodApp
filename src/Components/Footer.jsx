@@ -7,10 +7,10 @@ export default function Footer(){
         <>
           
 
-           <div className="w-full h-auto bg-gray-100">
-  <div className="w-[80%] container mx-auto py-10 px-10 grid grid-cols-5 gap-45 ">
+          <div className="w-full h-auto bg-gray-100">
+  <div className="w-full container mx-auto py-10 px-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
     {/* First Column */}
-    <div className="w-full flex flex-col items-start ">
+    <div className="w-full flex flex-col items-start">
       <div className="w-40 h-12 flex-shrink-0">
         <img className="w-40 h-12" src="https://media-assets.swiggy.com/portal/testing/seo-home/Group.svg" alt="Swiggy Logo" />
       </div>
@@ -18,10 +18,10 @@ export default function Footer(){
     </div>
 
     {/* Second Column */}
-    <div className="text-[16px] w-60 h-auto flex-shrink-0  ">
+    <div className="text-[16px] w-60 h-auto flex-shrink-0">
       <ul className="flex flex-col gap-2 text-gray-600 font-medium">
         <li className="font-bold text-xl text-black">Company</li>
-        <li className=""><a href="https://www.swiggy.com/about" target="_blank">About Us</a></li>
+        <li><a href="https://www.swiggy.com/about" target="_blank">About Us</a></li>
         <li><a href="https://www.swiggy.com/corporate/" target="_blank">Swiggy Corporate</a></li>
         <li><a href="https://www.swiggy.com/careers" target="_blank">Careers</a></li>
         <li><a href="https://www.swiggy.com/team" target="_blank">Team</a></li>
@@ -53,37 +53,36 @@ export default function Footer(){
         <li><a href="/city/delhi">Delhi</a></li>
         <li><a href="/city/mumbai">Mumbai</a></li>
         <li><a href="/city/pune">Pune</a></li>
-        <li className="border rounded-lg w-24 p-1 "><button>685 cities</button></li>
+        <li className="border rounded-lg w-24 p-1"><button>685 cities</button></li>
       </ul>
     </div>
 
     {/* Fifth Column (Social Media Links) */}
-  
+    <div className="text-[16px] w-60 h-auto flex-shrink-0">
+      {/* Add social media links or any content you need here */}
+    </div>
   </div>
- 
 
-  <div className="w-[90%] container mx-auto border-1 border-gray-400 "></div>
-  <div className="w-[80%] container mx-auto flex mt-10 items-center gap-10 text-center">
-        
-        <div>
-            <div className="font-bold text-2xl text-gray-600 flex-shrink-0">For better experience, download the Swiggy app now</div>
-        </div>
+  <div className="w-[90%] container mx-auto border-t border-gray-400 mt-8"></div>
 
-        <div>
-            <div className="flex gap-4">
-                <a href="https://apps.apple.com/in/app/swiggy-food-instamart-dineout/id989540920?referrer=utm_source%3Dswiggy%26utm_medium%3Dhomepage">
-                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-AppStore_lg30tv"></img>
-                </a>
+  <div className="w-full container mx-auto flex flex-col lg:flex-row mt-10 items-center gap-10 text-center">
+    <div>
+      <div className="font-bold text-2xl text-gray-600">For better experience, download the Swiggy app now</div>
+    </div>
 
-                <a href="https://play.google.com/store/apps/details?id=in.swiggy.android&referrer=utm_source%3Dswiggy%26utm_medium%3Dheader&pli=1">
-                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-GooglePlay_1_zixjxl"></img>
-                </a>
-            </div>
-        </div>
+    <div>
+      <div className="flex gap-4 justify-center">
+        <a href="https://apps.apple.com/in/app/swiggy-food-instamart-dineout/id989540920?referrer=utm_source%3Dswiggy%26utm_medium%3Dhomepage">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-AppStore_lg30tv" alt="App Store"></img>
+        </a>
+
+        <a href="https://play.google.com/store/apps/details?id=in.swiggy.android&referrer=utm_source%3Dswiggy%26utm_medium%3Dheader&pli=1">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-GooglePlay_1_zixjxl" alt="Google Play"></img>
+        </a>
       </div>
-  
+    </div>
+  </div>
 </div>
-
 
          
 
