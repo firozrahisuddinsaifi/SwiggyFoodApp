@@ -1,6 +1,6 @@
 
 
-
+import {Link} from "react-router"
 export default function Header(){
 
     return(<>
@@ -19,7 +19,7 @@ export default function Header(){
 
   <div className="pt-16 pb-8 relative">
     <img className="absolute left-0 top-0 h-60 md:h-110 w-60 object-cover hidden md:block" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png" alt="Veggies" />
-    <img className="absolute right-0 top-0 h-60 md:h-110 w-60 object-cover hidden md:block w-full" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png" alt="Sushi" />
+    <img className="absolute right-0 top-0 h-60 md:h-110 w-60 object-cover hidden md:block" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png" alt="Sushi" />
     
     <div className="max-w-[90%] md:max-w-[60%] text-3xl md:text-5xl text-white text-center font-bold container mx-auto">
       Order food & groceries. Discover best restaurants. Swiggy it!
