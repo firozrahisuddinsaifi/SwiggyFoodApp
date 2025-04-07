@@ -8,10 +8,13 @@ export default function FoodCard({foodData}){
 
     return(<>
 
- 
-        <a href={foodData?.action?.link}>
-        <img className="w-36 h-40 object-cover" src={ImageURL?.imageBaseURL+foodData?.imageId}></img>
-  
-        </a>
+<a href={foodData?.action?.link}>
+  <img
+    className="w-full sm:w-36 sm:h-40 h-auto object-cover"
+    src={ImageURL?.imageBaseURL + foodData?.imageId}
+    alt="Food Image"
+  />
+</a>
+
     </>)
 }
