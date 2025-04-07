@@ -11,7 +11,7 @@ export default function GroceryCard({GroceryData}){
               <img className="w-40 h-50 object-cover" src={ImageURL?.imageBaseURL+GroceryData?.imageId}></img>
               </a>
 
-              <p className="font-bold text-center ">{GroceryData?.action?.text}</p>
+              <p className="font-bold text-center">{GroceryData?.action?.text}</p>
               </div>
     </>)
 }
