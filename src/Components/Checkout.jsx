@@ -7,6 +7,9 @@ export default function Checkout(){
 
         const items = useSelector(state=>state.cartslice.items);
 
+
+        console.log(items[0].quantity);
+
     return(<>
 
         <div className=" bg-[#e9ecee] h-full">
