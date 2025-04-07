@@ -32,7 +32,7 @@ export default function Header(){
   </div>
 
   <div className="max-w-[90%] md:max-w-[80%] container mx-auto flex  justify-between gap-5">
-  <Link to="/restaurant"> 
+  <Link to="/restaurants"> 
       <img className="w-full" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/8/1/fa01e85b-3057-482d-9523-5289722b1df2_Food4BU.png" alt="Food Banner" />
 </Link>
 
