@@ -26,11 +26,11 @@ import { ImageURL } from "../Utils/Images";
 
 
                  <div className="w-[70%] mx-auto flex justify-between items-center">
-                 <h1 className="font-bold text-2xl">{restData?.header?.title}</h1>
+                 <h1 className="font-bold text-[16px] sm:text-2xl">{restData?.header?.title}</h1>
               
-                <div>
-                 <span className=" text-5xl text-gray-500 mr-5">‹</span>
-                 <span className=" text-5xl text-gray-500"> ›</span>
+                <div className="flex">
+                 <span className=" text-5xl text-gray-500 mr-5 hidden md:block">‹</span>
+                 <span className=" text-5xl text-gray-500 hidden md:block"> ›</span>
                 </div> 
                 </div>
              
