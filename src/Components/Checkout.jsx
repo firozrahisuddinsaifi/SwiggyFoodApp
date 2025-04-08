@@ -10,7 +10,7 @@ export default function Checkout() {
 
   useEffect(() => {
     const totalAmount = items.reduce((acc, curr) => {
-      acc += curr.defaultPrice / 100;
+      ("defaultPrice" in curr ?acc+= curr.defaultPrice / 100 : acc+=curr.price / 100)
       return acc;
     }, 0);
     setTotal(totalAmount); // Store the total in state
@@ -57,8 +57,7 @@ export default function Checkout() {
                   alt={restData.name}
                 />
                 <h1>{restData.name}</h1>
-                <h2>{"₹" + (restData.defaultPrice / 100).toFixed(2)}</h2>
-              </div>
+                <h2>{"₹" + ("defaultPrice" in restData ? restData.defaultPrice / 100 : restData.price / 100).toFixed(2)}</h2>              </div>
             ))}
 
             <hr className="mt-10" />
