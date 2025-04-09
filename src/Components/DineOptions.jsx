@@ -1,11 +1,24 @@
-// import { dineoutRestaurants } from "../Utils/DineoutData";
+import { useState } from "react";
 import { dineoutRestaurants } from "../Utils/DineoutData";
 import { ImageURL } from "../Utils/Images";
 import DineCard from "./DineCard";
 
 
 export default function DineOptions(){
+    const [slide,setSlide]=useState(0);
 
+    function nextBtn(){
+        const maxSlide = dineoutRestaurants.length - 4;
+      
+        if (slide >= maxSlide) return false;
+        setSlide(slide+3);
+        
+    }
+    function prevBtn(){
+        if(slide==0)
+            return false;
+        setSlide(slide-3);
+    }
 
     return(<>
 
@@ -14,14 +27,14 @@ export default function DineOptions(){
         <div className="flex justify-between items-center">
         <h1 className="font-bold text-[16px] sm:text-2xl">Discover best restaurants for Dineout</h1>
                <div className="flex">
-                <span className=" text-5xl text-gray-500 mr-5 hidden md:block">‹</span>
-                <span className=" text-5xl text-gray-500 hidden md:block"> ›</span>
-               </div>
+               <span className={`text-5xl  mr-5  hidden md:block hover:cursor-pointer ${slide==0? "text-gray-300  hover:cursor-none":"text-gray-500"} `}onClick={prevBtn}>‹</span>
+                <span className={`text-5xl  mr-5  hidden md:block hover:cursor-pointer ${slide>=6? "text-gray-300  hover:cursor-none":"text-gray-500"} `} onClick={nextBtn}> ›</span>
+ </div>
                </div>
         <div className="flex flex-nowrap overflow-x-auto mt-5 gap-4 no-scrollbar">
  
         {
-            dineoutRestaurants.map((restData)=><DineCard key={restData?.info?.id} restData={restData}/>)
+            dineoutRestaurants.map((restData)=><DineCard key={restData?.info?.id} restData={restData} slide={slide}/>)
         } 
 
         </div>

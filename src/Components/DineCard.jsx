@@ -1,12 +1,12 @@
 import { ImageURL } from "../Utils/Images";
 
 
-export default function DineCard({restData}){
+export default function DineCard({restData,slide}){
 
    
     return(<>
-
-        <div className="max-w-sm flex-none border rounded-2xl border-gray-200 py-1 px-1">
+    {/* <div className="overflow-hidden flex-none w-40 duration-500 ease-in-out" style={{ transform: `translateX(-${slide*100}%)` }}></div> */}
+        <div className="max-w-sm flex-none border rounded-2xl border-gray-200 py-1 px-1 duration-500 ease-in-out" style={{ transform: `translateX(-${slide*100}%)` }}>
             <a href={restData?.cta?.link}>
             <div target="_blank" className="relative">
                 <img className="w-80 h-50 object-cover rounded-2xl " src={ImageURL?.imageBaseURL+restData?.info?.mediaFiles[0]?.url}></img>
