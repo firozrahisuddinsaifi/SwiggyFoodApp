@@ -40,7 +40,9 @@ export default function RestHeader(){
 
 
   <div>
+  <Link to={"/"}>
     <img className="w-40 h-12" src="https://www.swiggy.com/corporate/wp-content/uploads/2024/10/swiggy-logo.webp" alt="Swiggy Logo" />
+    </Link>
   </div>
 
 
