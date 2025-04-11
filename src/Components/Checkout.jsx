@@ -74,7 +74,7 @@ export default function Checkout() {
                       " x " +
                       restData.quantity}
                   </h2>
-                  <h2 className="text-xl font-bold">
+                  <h2 className="text-sm font-semibold ml-2 sm:text-base md:text-sm lg:text-lg">
                     ₹{" "}
                     {(
                       ("defaultPrice" in restData
@@ -90,8 +90,10 @@ export default function Checkout() {
             <hr className="mt-10" />
 
             {/* Total Section */}
-            <div className="flex justify-between font-bold text-lg mt-5">
-              <h2>Total</h2>
+            <div className="flex justify-between font-bold text-lg mt-5 text-green-700 hover:cursor-pointer">
+           
+            <h2>Total</h2>
+            <h2>To Pay</h2>
               <h3>₹ {total.toFixed(2)}</h3>
             </div>
           </div>
