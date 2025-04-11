@@ -16,7 +16,8 @@ export default function Header(){
       <a className="border rounded-3xl border-black bg-black py-3 px-6 mr-4" href="#">Sign in</a>
     </div>
   </div>
-
+  <marquee className="font-bold text-2xl text-white">This website using LIVE API cors permission required</marquee> 
+                  
   <button class="relative text-white font-bold py-2 px-4 group">
                     <a href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank">Cors Permission</a>
                    <span class="absolute bottom-0 left-0 w-0 h-1 bg-white transition-all duration-500 group-hover:w-full"> </span>
