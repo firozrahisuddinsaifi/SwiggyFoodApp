@@ -17,6 +17,11 @@ export default function Header(){
     </div>
   </div>
 
+  <button class="relative text-white font-bold py-2 px-4 group">
+                    <a href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank">Cors Permission</a>
+                   <span class="absolute bottom-0 left-0 w-0 h-1 bg-white transition-all duration-500 group-hover:w-full"> </span>
+                    </button>
+
   <div className="pt-16 pb-8 relative">
     <img className="absolute left-0 top-0 h-60 md:h-110 w-60 object-cover hidden md:block" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png" alt="Veggies" />
     <img className="absolute right-0 top-0 h-60 md:h-110 w-60 object-cover hidden md:block" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png" alt="Sushi" />
