@@ -1,7 +1,7 @@
 import Home from "./Components/Home"
 import RestaurantMenu from "./Components/RestaurantMenu";
 import Restaurants from "./Components/Restaurants"
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router";
 import Search from "./Components/Search";
 import SecondaryHome from "./Components/SecondaryHome";
 import { store } from "./Stored/stores";
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
   <Provider store={store}>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
       <Route path="/" element={<Home/>}></Route>
       <Route element={<SecondaryHome/>}>
@@ -24,7 +24,7 @@ function App() {
       </Route>
       <Route path="/checkout" element={<Checkout/>}></Route>
       </Routes>
-    </BrowserRouter> 
+    </HashRouter> 
     </Provider>
     </>
   )
