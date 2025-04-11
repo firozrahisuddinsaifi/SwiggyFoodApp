@@ -1,7 +1,7 @@
 import Home from "./Components/Home"
 import RestaurantMenu from "./Components/RestaurantMenu";
 import Restaurants from "./Components/Restaurants"
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router";
+import {Routes, Route, HashRouter } from "react-router";
 import Search from "./Components/Search";
 import SecondaryHome from "./Components/SecondaryHome";
 import { store } from "./Stored/stores";
