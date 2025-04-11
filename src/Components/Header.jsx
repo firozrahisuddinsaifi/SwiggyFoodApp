@@ -24,7 +24,7 @@ export default function Header(){
     <div className="max-w-[90%] md:max-w-[60%] text-3xl md:text-5xl text-white text-center font-bold container mx-auto">
       Order food & groceries. Discover best restaurants. Swiggy it!
     </div>
-
+    
     <div className="max-w-[90%] md:max-w-[65%] container mx-auto flex flex-col md:flex-row gap-5 mt-5">
       <input className="bg-white w-full md:w-[40%] text-base px-6 py-4 outline-none rounded-2xl" type="text" placeholder="Enter your delivery location" />
       <input className="bg-white w-full md:w-[55%] text-base px-6 py-4 outline-none rounded-2xl" type="text" placeholder="Search for restaurant, item or more" />
